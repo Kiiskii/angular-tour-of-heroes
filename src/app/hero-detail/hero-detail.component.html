@@ -1,0 +1,13 @@
+<div *ngIf="hero" class="bg-slate-300 w-72 p-1 rounded">
+  <h2>{{ hero.name | uppercase }} Details</h2>
+  <div><span>id: </span>{{ hero.id }}</div>
+  <div>
+    <label for="hero-name">Hero name: </label>
+    <input
+      class="pl-1 w-32 rounded"
+      id="hero-name"
+      [(ngModel)]="hero.name"
+      placeholder="name"
+    />
+  </div>
+</div>
