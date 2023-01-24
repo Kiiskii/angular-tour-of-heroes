@@ -1,0 +1,35 @@
+<section class="wrapper">
+  <h2 class="mb-2">My Heroes</h2>
+  <ul class="heroes">
+    <li *ngFor="let hero of heroes" class="flex">
+      <button
+        [class.selected]="hero === selectedHero"
+        type="button"
+        class="mb-2 flex bg-slate-300"
+        (click)="onSelect(hero)"
+      >
+        <span
+          class="badge bg-slate-700 rounded-l rounded-bl text-white p-2 w-10"
+          >{{ hero.id }}.
+        </span>
+        <span
+          class="name rounded-r rounded-br p-2 block w-36 hover:bg-black hover:text-white"
+          >{{ hero.name }}</span
+        >
+      </button>
+    </li>
+    <div *ngIf="selectedHero" class="p-1 bg-slate-300 rounded w-80">
+      <h2 class="p-1">{{ selectedHero.name | uppercase }} Details</h2>
+      <div class="p-1">id: {{ selectedHero.id }}</div>
+      <div>
+        <label for="hero-name" class="p-1">Hero name: </label>
+        <input
+          class="pl-1 w-32"
+          id="hero-name"
+          [(ngModel)]="selectedHero.name"
+          placeholder="name"
+        />
+      </div>
+    </div>
+  </ul>
+</section>
