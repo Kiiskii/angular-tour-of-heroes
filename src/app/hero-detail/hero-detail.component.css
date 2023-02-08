@@ -1,0 +1,6 @@
+.heroDetail {
+  @apply bg-slate-300 max-w-xs mr-10 mt-3 p-2 rounded;
+}
+.btn {
+  @apply bg-red-800 text-white rounded p-2 block mt-1;
+}

@@ -1,0 +1,12 @@
+.navbar {
+  @apply p-6 pr-4 bg-gradient-to-r from-black to-red-800 text-white flex flex-col sm:flex-row justify-between;
+}
+.links {
+  @apply flex items-center pt-6 sm:pt-0;
+}
+ul {
+  @apply flex flex-col sm:flex-row pr-10;
+}
+li {
+  @apply sm:pl-6 text-xl;
+}

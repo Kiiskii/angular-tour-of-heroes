@@ -1,3 +1,15 @@
-.heroes button.selected {
-  @apply bg-black text-white rounded;
+/* button.selected {
+  @apply bg-black text-white;
+} */
+.heroes {
+  @apply sm:columns-3;
+}
+.link {
+  @apply mb-2 flex bg-slate-300;
+}
+.badge {
+  @apply bg-slate-700 rounded-l rounded-bl text-white p-2 w-10;
+}
+.heroName {
+  @apply rounded-r rounded-br p-2 block w-36 hover:bg-black hover:text-white;
 }

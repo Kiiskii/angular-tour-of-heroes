@@ -1,0 +1,6 @@
+.clear {
+  @apply bg-red-800 text-white p-3 border rounded-lg mt-3 mb-3;
+}
+.messages {
+  @apply p-3 bg-black text-white border rounded-lg;
+}
