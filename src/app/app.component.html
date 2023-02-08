@@ -1,5 +1,15 @@
-<section class="wrapper p-3 text-xl">
-  <h1>{{ title }}</h1>
-  <app-heroes></app-heroes>
+<section class="content">
+  <nav class="navbar">
+    <div>
+      <h1 class="title font-semibold text-4xl">{{ title }}</h1>
+    </div>
+    <div class="links">
+      <ul>
+        <li><a routerLink="/dashboard">Dashboard</a></li>
+        <li><a routerLink="/heroes">Heroes</a></li>
+      </ul>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
   <app-messages></app-messages>
 </section>

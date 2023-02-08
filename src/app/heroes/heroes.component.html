@@ -1,8 +1,12 @@
 <section class="wrapper">
-  <h2 class="mb-2">My Heroes</h2>
+  <h2 class="mb-2 font-semibold text-2xl">My Heroes</h2>
   <ul class="heroes">
     <li *ngFor="let hero of heroes" class="flex">
-      <button
+      <a class="link" routerLink="/detail/{{ hero.id }}">
+        <span class="badge">{{ hero.id }}</span>
+        <p class="heroName">{{ hero.name }}</p>
+      </a>
+      <!-- <button
         [class.selected]="hero === selectedHero"
         type="button"
         class="mb-2 flex bg-slate-300"
@@ -13,11 +17,10 @@
           >{{ hero.id }}.
         </span>
         <span
-          class="name rounded-r rounded-br p-2 block w-36 hover:bg-black hover:text-white"
+          class="rounded-r rounded-br p-2 block w-36 hover:bg-black hover:text-white"
           >{{ hero.name }}</span
         >
-      </button>
+      </button> -->
     </li>
-    <app-hero-detail [hero]="selectedHero"></app-hero-detail>
   </ul>
 </section>

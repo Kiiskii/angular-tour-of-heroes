@@ -1,0 +1,12 @@
+<section class="wrapper">
+  <h2 class="title">Top Heroes</h2>
+  <div class="heroes-menu">
+    <a
+      class="name mb-2 ml-2"
+      *ngFor="let hero of heroes"
+      routerLink="/detail/{{ hero.id }}"
+    >
+      {{ hero.name }}
+    </a>
+  </div>
+</section>

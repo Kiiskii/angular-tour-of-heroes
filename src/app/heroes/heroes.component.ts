@@ -21,10 +21,4 @@ export class HeroesComponent {
   ngOnInit(): void {
     this.getHeroes();
   }
-
-  selectedHero?: Hero;
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-    this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`);
-  }
 }

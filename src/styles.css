@@ -2,3 +2,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.wrapper {
+  @apply p-10;
+}
+.title {
+  @apply font-semibold text-3xl ml-2 mb-2;
+}
+.name {
+  @apply bg-slate-300 rounded rounded-r rounded-br p-2 block w-36 hover:bg-black hover:text-white;
+}
